@@ -31,7 +31,9 @@ const Layout = () => {
 							<News />
 						</Route>
 						<Route exact path="/events">
-							<Events />
+							<Events name="Fight 1: Miami" date="8/8/2022 at 8:00PM" location="American Airlines Arena"/>
+							<Events name="Fight 2: Miami" date="10/12/2022 at 6:00PM" location="American Airlines Arena"/>
+							<Events name="Fight 3: New York" date="12/25/2022 at 6:00PM" location="Madison Square Garden"/>
 						</Route>
 						<Route exact path="/fightersignup">
 							<Fightersignup />
