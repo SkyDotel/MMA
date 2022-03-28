@@ -1,10 +1,22 @@
 import React from "react";
+import { fightnews } from "/workspace/MMA/src/newsdata.js"; 
 
-
-export const News = () => {
-    return(
-    <div>
-        <h1> News Here</h1>
-    </div>
-    );
-}; 
+export const News =() => {
+    return (
+        <div>
+          <div className="news-container">
+            {fightnews.map((data, key) => {
+              return (
+                <div key={key}>
+                  {data.title +
+                    " , " +
+                    data.pubDate +
+                    " , " +
+                    data.link}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    };
